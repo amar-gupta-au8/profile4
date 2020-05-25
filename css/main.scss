@@ -12,8 +12,9 @@ a:hover{
     text-decoration: line-through;
 }
 
+// Side Bar Left
 .sidebar-left{
-    .top, .bottom{
+    .top, .middle, .bottom{
         margin-right: 20px;
         position: fixed;
         left: 0;
@@ -22,15 +23,31 @@ a:hover{
     }
     .top{
         top: 0;
-        transform: rotate(270deg) translate(-74px, 30px)
+        transform: rotate(270deg) translate(-74px, 30px);
+    }
+    .middle{
+        top: 40%;
+        transform: rotate(270deg) translate(-74px, 30px);
+        p{
+            color: rgb(40, 40, 40) !important;
+            cursor: pointer;
+        }
+        p:hover{
+            text-decoration: line-through;
+        }
     }
     .bottom{
         bottom: 0;
-        transform: rotate(270deg) translate(135%, 30px)
+        transform: rotate(270deg) translate(135%, 30px);
     }
 }
 
-.header{
+
+// Header Section
+
+    
+    
+    // Side bar
     .title-container{
         position: absolute;
         max-width: 1280px;
@@ -47,4 +64,156 @@ a:hover{
         line-height: 1.168;
         max-width: 650px;
     }
-}
+
+.nav{
+        color: #000000;
+        background-color: #9baad1;
+        cursor: pointer;
+        font-size: 32px;
+        height: 100vh;
+        right: -480px;
+        padding: 32px;
+        position: fixed;
+        top: 0;
+        width: 320px;
+        z-index: 1;
+        transition: right 0.5s ease;
+        ul{
+            text-transform: uppercase;
+            position: absolute;
+            list-style: none;
+            padding-left: 50px;
+            display: grid;
+            transform: translateY(50%);
+            li{
+                margin-bottom: 20px;
+                font-weight: 400;//you can use 700
+            }
+        }
+    }
+    .nav.expanded {
+        right: 0;
+      }
+      
+      .nav-toggle {
+        cursor: pointer;
+        height: 32px;
+        right: 32px;
+        position: fixed;
+        top: 32px;
+        width: 57.6px;
+        z-index: 2;
+      }
+      
+      .nav-toggle .nav-toggle-bar,
+      .nav-toggle .nav-toggle-bar::after,
+      .nav-toggle .nav-toggle-bar::before {
+        position: absolute;
+        top: 50%;
+        transition: all 0.5s ease;
+        transform: translateY(-50%);
+        background-color: #000000;
+        content: '';
+        height: 6.4px;
+        width: 100%;
+      }
+      
+      .nav-toggle .nav-toggle-bar {
+        margin-top: 0;
+      }
+      
+      .nav-toggle .nav-toggle-bar::after {
+        margin-top: 12.8px;
+      }
+      
+      .nav-toggle .nav-toggle-bar::before {
+        margin-top: -12.8px;
+      }
+      
+      .nav-toggle.expanded .nav-toggle-bar::after,
+      .nav-toggle.expanded .nav-toggle-bar::before {
+        background-color: #ffffff;
+        margin-top: 0;
+      }
+      
+      .nav-toggle.expanded .nav-toggle-bar::after {
+        transform: rotate(45deg);
+      }
+      
+      .nav-toggle.expanded .nav-toggle-bar::before {
+        transform: rotate(-45deg);
+      }
+      
+      .nav-toggle.expanded .nav-toggle-bar {
+        background: transparent;
+      }
+      
+      /* bottom nav */
+      
+      #bottom-nav {
+        position: fixed;
+        bottom: 60px;
+        right: 60px;
+      }
+      
+      #bottom-nav ul,
+      li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: inline-block;
+      }
+      
+      #bottom-nav li {
+        margin-right: 10px;
+      }
+      
+      .number-menu img {
+        display: none;
+      }
+      
+      .image-mode img {
+        display: inline-flex !important;
+        width: 500px;
+        position: absolute;
+        z-index: -1;
+        bottom: 100px;
+        right: 200px;
+      }   
+      
+      
+      //Switch
+      
+      .light-color{
+        color: #333;
+        background: rgb(219, 219,219);
+    }
+    
+    // .theme-switch .switch{
+    //     
+    //     
+    //     border-radius:50%;
+    //     position: absolute;
+    //     top: 3px;
+    //     left: 4px;
+    //     transition:0.5s all ease;
+    // }
+    .light-theme{
+        background: rgb(13, 17, 20);
+        color: #6EFAF1;
+        a{
+            color: #6EFAF1 !important;
+        }
+        .nav-toggle{
+            color: #6EFAF1 !important;
+        }
+    }
+    .light-theme .theme-switch{
+        background: #6EFAF1;
+        color: #6EFAF1 !important;
+        
+    }
+    // .light-theme .theme-switch .switch{
+    //    transform: translateX(37px)
+        
+    // }
