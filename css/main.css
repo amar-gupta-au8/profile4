@@ -226,4 +226,10 @@ li {
   background: #6EFAF1;
   color: #6EFAF1 !important;
 }
+
+@media (max-width: 480px) {
+  #bottom-nav {
+    display: none;
+  }
+}
 /*# sourceMappingURL=main.css.map */

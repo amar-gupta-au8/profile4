@@ -214,4 +214,10 @@ a:hover{
         color: #6EFAF1 !important;
         
     }
+    
+    @media(max-width:480px){
+        #bottom-nav{
+            display: none;
+        }
+    }
    
