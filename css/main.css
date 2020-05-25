@@ -227,7 +227,7 @@ li {
   color: #6EFAF1 !important;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 650px) {
   #bottom-nav {
     display: none;
   }
