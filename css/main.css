@@ -208,8 +208,18 @@ li {
   color: #6EFAF1 !important;
 }
 
+.light-theme .nav {
+  background-color: #172027;
+}
+
 .light-theme .nav-toggle {
   color: #6EFAF1 !important;
+}
+
+.light-theme .nav-toggle .nav-toggle-bar,
+.light-theme .nav-toggle .nav-toggle-bar::after,
+.light-theme .nav-toggle .nav-toggle-bar::before {
+  background-color: #6EFAF1;
 }
 
 .light-theme .theme-switch {
