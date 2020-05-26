@@ -1,7 +1,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: #ebeff1;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 a{
@@ -152,16 +152,23 @@ a:hover{
       
       #bottom-nav {
         position: fixed;
-        bottom: 60px;
+        top: 160px;
+        left: 15%;
         right: 60px;
+        a:hover{
+            text-decoration: none;
+            margin-right: 10px;
+        }
       }
       
       #bottom-nav ul,
       li {
-        margin: 0;
+        margin-top: 6vh;
         padding: 0;
         list-style: none;
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
       }
       
       #bottom-nav li {
@@ -172,13 +179,16 @@ a:hover{
         display: none;
       }
       
+      
       .image-mode img {
-        display: inline-flex !important;
-        width: 500px;
+        display: flex !important;
+        opacity: 1;
+        width: 50%;
         position: absolute;
-        z-index: -1;
-        bottom: 100px;
-        right: 200px;
+        
+        
+        bottom: 0;
+        right: 0;
       }   
       
       
@@ -196,6 +206,8 @@ a:hover{
         a{
             color: #6EFAF1 !important;
         }
+        .card {
+            background-color: rgb(23, 32, 39);}
         .nav{
             
             background-color: rgb(23, 32, 39);
@@ -226,6 +238,11 @@ a:hover{
         }
         
     }
+    @media(min-width:1200px){
+        .cards{
+            display: none;
+        }
+    }
 .up-header{
   .title-container{
     position: absolute;
@@ -234,4 +251,19 @@ a:hover{
     left: 10%;
     padding-right: 40px;
 }
+}
+.cards{
+    margin-left: 20px;
+}
+.card {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 250px;
+    margin: 15%;
+    // position: relative;
+    // top: 25%;
+}
+.card-1{
+    margin-top:250px;
 }

@@ -1,7 +1,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #ebeff1;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 a {
@@ -163,16 +163,29 @@ p {
 /* bottom nav */
 #bottom-nav {
   position: fixed;
-  bottom: 60px;
+  top: 160px;
+  left: 15%;
   right: 60px;
+}
+
+#bottom-nav a:hover {
+  text-decoration: none;
+  margin-right: 10px;
 }
 
 #bottom-nav ul,
 li {
-  margin: 0;
+  margin-top: 6vh;
   padding: 0;
   list-style: none;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 2rem;
 }
 
 #bottom-nav li {
@@ -184,14 +197,14 @@ li {
 }
 
 .image-mode img {
-  display: -webkit-inline-box !important;
-  display: -ms-inline-flexbox !important;
-  display: inline-flex !important;
-  width: 500px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  opacity: 1;
+  width: 50%;
   position: absolute;
-  z-index: -1;
-  bottom: 100px;
-  right: 200px;
+  bottom: 0;
+  right: 0;
 }
 
 .light-color {
@@ -206,6 +219,10 @@ li {
 
 .light-theme a {
   color: #6EFAF1 !important;
+}
+
+.light-theme .card {
+  background-color: #172027;
 }
 
 .light-theme .nav {
@@ -238,6 +255,12 @@ li {
   }
 }
 
+@media (min-width: 1200px) {
+  .cards {
+    display: none;
+  }
+}
+
 .up-header .title-container {
   position: absolute;
   max-width: 1280px;
@@ -245,4 +268,20 @@ li {
   left: 10%;
   padding-right: 40px;
 }
-/*# sourceMappingURL=main.css.map */
+
+.cards {
+  margin-left: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  min-height: 250px;
+  margin: 15%;
+}
+
+.card-1 {
+  margin-top: 250px;
+}
+/*# sourceMappingURL=project.css.map */
