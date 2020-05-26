@@ -238,6 +238,12 @@ li {
   }
 }
 
+@media (min-width: 1200px) {
+  .mr-2, .mr-3 {
+    display: none;
+  }
+}
+
 .up-header .title-container {
   position: absolute;
   max-width: 1280px;
@@ -268,5 +274,21 @@ li {
 
 #side-nav ul li, #side-nav li li {
   margin-right: 5px;
+}
+
+.mr-2 {
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+  -webkit-transform: rotate(90deg) translate(-90%, -40px);
+          transform: rotate(90deg) translate(-90%, -40px);
+}
+
+.mr-3 {
+  position: fixed;
+  bottom: 0px;
+  right: 90px;
+  -webkit-transform: rotate(90deg) translate(-40%, -40px);
+          transform: rotate(90deg) translate(-40%, -40px);
 }
 /*# sourceMappingURL=main.css.map */

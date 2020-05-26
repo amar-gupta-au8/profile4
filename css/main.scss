@@ -226,6 +226,11 @@ a:hover{
         }
         
     }
+    @media(min-width:1200px){
+      .mr-2, .mr-3{
+          display: none;
+      }
+    }
 .up-header{
   .title-container{
     position: absolute;
@@ -251,4 +256,16 @@ a:hover{
     margin-right: 5px;
   }
 }
+}
+.mr-2{
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+  transform: rotate(90deg) translate(-90%, -40px);
+}
+.mr-3{
+  position: fixed;
+  bottom: 0px;
+  right: 90px;
+  transform: rotate(90deg) translate(-40%, -40px);
 }
