@@ -51,19 +51,27 @@ a:hover{
     .title-container{
         position: absolute;
         max-width: 1280px;
-        top:20%;
+        top:30%;
         left: 20%;
         padding-right: 40px;
     }
+    
     h1{
-        font-size:74px;
+        position: fixed;
+        top:10%;
+        left: 20%;
+        max-width: 1280px;
+        font-size:84px;
         text-transform:uppercase;
         font-weight: 700;
+        padding-right: 40px;
     }
     p{
+        
         line-height: 1.168;
         max-width: 650px;
     }
+
 
 .nav{
         color: #000000;
@@ -219,10 +227,17 @@ a:hover{
         #bottom-nav{
             display: none;
         }
-        .title-container h1{
+        h1{
           margin-left: 20px;
           line-height: 1;
           font-size:55px;
+          top: 10%;
+        }
+        .title-container{
+            top:19%;
+            p{
+                line-height: 1.3;
+            }
         }
         
     }
@@ -251,4 +266,32 @@ a:hover{
     margin-right: 5px;
   }
 }
+}
+.list-2{
+    display: flex;
+//    text-align: center;
+    align-items: center;
+}
+.list-3{
+    
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    li{
+        margin: 1rem 0; 
+    }
+}
+
+.mr-1 {
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    
+    
+  }
+  .mr-2{
+    position: fixed;
+    bottom: 0px;
+    right: 20px;
+    transform: rotate(90deg) translate(-130%, 10px);
 }
