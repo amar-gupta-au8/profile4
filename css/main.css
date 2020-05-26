@@ -231,5 +231,8 @@ li {
   #bottom-nav {
     display: none;
   }
+  .title-container h1 {
+    line-height: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */

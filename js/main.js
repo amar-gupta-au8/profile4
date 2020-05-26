@@ -13,9 +13,9 @@
     hamburger.navToggle.addEventListener('click', function(e) {
       hamburger.doToggle(e);
     });
-    hamburger.nav.addEventListener('click', function(e) {
-      hamburger.doToggle(e);
-    });
+    // hamburger.nav.addEventListener('click', function(e) {
+    //   hamburger.doToggle(e);
+    // });
   })();
   
   const navItems = document.getElementsByClassName('number-menu');
@@ -27,5 +27,3 @@
   function mOut(index) {
     navItems[index].classList.remove('image-mode');
   }
-  
-  
