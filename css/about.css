@@ -248,6 +248,10 @@ li {
   }
   .title-container p {
     line-height: 1.3;
+    font-size: 0.9rem;
+  }
+  .list-2 li {
+    font-size: 0.9rem;
   }
 }
 
