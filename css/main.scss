@@ -193,6 +193,24 @@ a:hover{
     .light-theme{
         background: rgb(13, 17, 20);
         color: #6EFAF1;
+        .sun{
+          color: #fff;
+        }
+        .moon svg{
+          fill: #fff;
+          stroke: #fff;
+        }
+        .sun svg{
+          fill: #fff;
+          stroke: #fff;
+        }
+        .middle{
+          background:rgb(13, 17, 20) !important;
+          color: #6EFAF1 !important;
+        }
+        .middle p{
+          color: #6EFAF1 !important;
+        }
         a{
             color: #6EFAF1 !important;
         }
@@ -209,6 +227,7 @@ a:hover{
         background-color: #6EFAF1;
       }
     }
+    
     .light-theme .theme-switch{
         background: #6EFAF1;
         color: #6EFAF1 !important;
@@ -219,6 +238,15 @@ a:hover{
         #bottom-nav{
             display: none;
         }
+        .nav{
+          display: none;
+        }
+        .middle {
+          display: none;
+        }
+        .nav-toggle{
+          display: none;
+        }
         .title-container h1{
           margin-left: 20px;
           line-height: 1;
@@ -227,8 +255,15 @@ a:hover{
         
     }
     @media(min-width:1200px){
-      .mr-2, .mr-3{
+      .mr-2, .mr-3,  .sun, .moon{
           display: none;
+      }
+      .middle{
+        background:  #ebeff1 !important;
+      }
+    
+      .dark-toggle{
+        display: none;
       }
     }
 .up-header{
@@ -268,4 +303,44 @@ a:hover{
   bottom: 0px;
   right: 90px;
   transform: rotate(90deg) translate(-40%, -40px);
+}
+
+
+.theme-switch .switch{
+  background: #333;
+  width: 24px;
+  height:24px;
+  border-radius:50%;
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  transition:0.5s all ease;
+  
+}
+
+.light-theme .theme-switch .switch{
+ transform: translateX(-37px)
+ 
+  
+}
+.theme-switch  {
+  color:rgb(24, 31, 36);
+  width: 70px;
+  height: 30px;
+  background:  #fff;
+  border-radius: 50px;
+  position: absolute;
+  top: 10px;
+  right: 50px;
+}
+
+.sun{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.moon{
+  position: absolute;
+  top: 10px;
+  right: 120px;
 }
