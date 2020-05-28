@@ -49,7 +49,7 @@ a:hover {
 }
 
 .title-container {
-  position: absolute;
+  position: fixed;
   max-width: 1280px;
   top: 30%;
   left: 20%;
@@ -233,6 +233,12 @@ li {
 }
 
 @media (max-width: 650px) {
+  .mr-1 {
+    display: none;
+  }
+  .mr-2 {
+    display: none;
+  }
   #bottom-nav {
     display: none;
   }
@@ -244,7 +250,7 @@ li {
     left: 10%;
   }
   .title-container {
-    top: 19%;
+    top: 30%;
   }
   .title-container p {
     line-height: 1.3;
